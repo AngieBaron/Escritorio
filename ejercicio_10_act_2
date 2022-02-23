@@ -1,0 +1,54 @@
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Ejercicio_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int largo = 0;
+            int ancho = 0;
+            int preciom2 = 0;
+            int metro2 = 0;
+            double precioT = 0;
+            double DESCUENTO1 = 0.10;
+            double DESCUENTO2 = 0.17;
+            double DESCUENTO3 = 0.25;
+
+            Console.WriteLine("Digite el largo del terreno");
+            largo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el ancho del terreno");
+            ancho = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el precio del metro cuadrado del terreno");
+            preciom2 = int.Parse(Console.ReadLine());
+
+            metro2 = largo * ancho;
+
+            if (metro2 <= 400)
+            {
+                precioT = (metro2 * preciom2);
+            }
+            if (metro2 > 400 && metro2 < 500)
+            {
+
+                precioT = (metro2 * preciom2) - (DESCUENTO1 * metro2 * preciom2); 
+                
+
+            }
+            if (metro2 > 500 && metro2 < 1000)
+            {
+                precioT = (metro2 * preciom2) - (DESCUENTO2 * metro2 * preciom2); 
+            }
+            if (metro2 > 1000)
+            {
+                precioT = (metro2 * preciom2) - (DESCUENTO3 * metro2 * preciom2); 
+            }
+            Console.WriteLine("El costo a pagar por el terreno es de {0}:" , precioT);
+        }
+    }
+}
