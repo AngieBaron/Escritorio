@@ -1,0 +1,43 @@
+using System;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Problema_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string Frase = "";
+            int CantCaracter, ContConso = 0, ContVocal = 0, ContNum = 0;
+            char i;
+
+            Console.WriteLine("Digite una frase.");
+            Frase = System.Console.ReadLine();
+
+            for (CantCaracter = 0; CantCaracter < Frase.Length; CantCaracter++)
+            {
+                i = Frase[CantCaracter];
+                int Caracter = char.ToLower(i);
+                if (Caracter == 'a' || Caracter == 'e' || Caracter == 'i' || Caracter == 'o' || Caracter == 'u')
+                {
+                    ContVocal++;
+                }
+                else if (Caracter >= '0' && Caracter <= '9')
+                {
+                    ContNum++;
+                }
+                else
+                {
+                    ContConso++;
+                }
+            }
+            Console.WriteLine("Tú frase tiene " + ContVocal + " vocales.");
+            Console.WriteLine("Tú frase tiene " + ContConso + " consonantes.");
+            Console.WriteLine("Tú frase tiene " + ContNum + " números.");
+            Console.WriteLine("En total tiene " + Frase.Length + " caracteres."); 
+        }
+    }
+}
