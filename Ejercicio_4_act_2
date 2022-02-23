@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace problema2
+{
+    class problema2
+    {
+        private int[] vector;
+
+        public void Cargar()
+        {
+            vector = new int[10];
+            for (int f = 0; f < vector.Length; f++)
+            {
+                Console.WriteLine("Ingrese el numero {0}", f + 1);
+                vector[f] = int.Parse(Console.ReadLine());
+            }
+        }
+
+        public void Imprimir()
+        
+        {
+            Console.WriteLine("1-organizar de mayor a menor");
+            Console.WriteLine("2-organizar de menor a mayor");
+            int cadena = int.Parse(System.Console.ReadLine());
+
+            switch (cadena)
+            {
+                case 1:
+                    Console.WriteLine("organizacion de mayor a menor");
+                    for (int f = 0; f < vector.Length; f++)
+                    {
+
+                        Array.Sort(vector);
+                        Array.Reverse(vector);
+                        Console.Write(vector[f].ToString() + "  ");
+                        
+                    }
+                    Console.WriteLine();
+                    
+                    break;
+                case 2:
+                    Console.WriteLine("organizacion de menor a mayor");
+                    for (int f = 0; f < vector.Length; f++)
+                    {
+                        Array.Sort(vector);
+                        Console.Write(vector[f].ToString() + "  ");
+                    }
+
+                    break;
+
+            }
+        Console.ReadKey();
+            
+    }
+
+        static void Main(string[] args)
+        {
+            problema2 pv = new problema2();
+            pv.Cargar();
+            pv.Imprimir();
+        }
+    }
+}
