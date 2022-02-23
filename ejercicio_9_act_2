@@ -28,7 +28,7 @@ namespace Ejercicio_4
                 case 't':
                 case 'T':
                     Console.WriteLine();
-                    Console.WriteLine( "digite la base");
+                    Console.WriteLine("digite la base");
                     bases = double.Parse(Console.ReadLine());
                     Console.WriteLine("digite la altura");
                     altura = double.Parse(Console.ReadLine());
@@ -44,6 +44,7 @@ namespace Ejercicio_4
                     break;
                     Console.WriteLine("el area es{0}", resultado);
             }
+            Console.WriteLine("el area es: {0}", resultado);
         }
     }
 }
