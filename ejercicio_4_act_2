@@ -1,0 +1,52 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+
+namespace Caliificacion
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int n = 0;
+            int numeroNatural = 0;
+            int positivo = 0;
+            int negativo = 0;
+            int sumarpar = 0;
+            int sumarimpar = 0;
+            int contadorpar = 0;
+            int contadorimpar = 0;
+
+            n = 10;
+            
+            while (n>0)
+            {
+                Console.WriteLine("digite un numero natural");
+                numeroNatural = int.Parse(System.Console.ReadLine());
+            
+                
+                    if (numeroNatural % 2 == 0)
+                    {
+                        contadorpar = contadorpar + 1;
+                        sumarpar = sumarpar + numeroNatural;
+                    }
+                    else
+                    {
+                        contadorimpar = contadorimpar + 1;
+                        sumarimpar = sumarimpar + numeroNatural;
+                    }
+                n--;
+            }
+            
+
+            
+                    Console.WriteLine("los numero pares son {0}:", contadorpar);
+                    Console.WriteLine("los numero impares son {0}:", contadorimpar);
+                    Console.WriteLine("El promedio de los numeros pares es {0}:", sumarpar/ contadorpar);
+                    Console.WriteLine("El promedio de los numeros pares es {0}:", sumarimpar / contadorimpar);
+
+        }
+    }
+}
