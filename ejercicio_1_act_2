@@ -1,0 +1,329 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+
+namespace Caliificacion
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+        
+            int matematicas, ingles, español, fisica;
+            int estudiante1, estudiante2, estudiante3, estudiante4, estudiante5;
+
+            Console.WriteLine("digite nota de matematicas de 1 a 100  del primer estudiante ");
+            matematicas = int.Parse(System.Console.ReadLine());
+            if (matematicas < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (matematicas >= 50 && matematicas < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (matematicas >= 60 && matematicas < 79)
+                Console.WriteLine("la nota es buena");
+            if (matematicas >= 70 && matematicas < 89)
+                Console.WriteLine("la nota es notale");
+            if (matematicas >= 90 && matematicas < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+            
+            Console.WriteLine("la nota de matematicas del primer estudiante es {0}", matematicas);
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del primer estudiante ");
+            ingles = int.Parse(System.Console.ReadLine());
+            if (ingles<50)
+                Console.WriteLine("la nota es insuficiente");
+            if (ingles >= 50 && ingles < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (ingles >= 60 && ingles < 79)
+                Console.WriteLine("la nota es buena");
+            if (ingles >= 70 && ingles < 89)
+                Console.WriteLine("la nota es notale");
+            if (ingles >= 90 && ingles < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de ingles del primer estudiante es {0}", ingles);
+           
+            
+            Console.WriteLine("digite nota de español de 1 a 100  del primer estudiante ");
+            español = int.Parse(System.Console.ReadLine());
+            if (español < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (español >= 50 && español < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (español >= 60 && español < 79)
+                Console.WriteLine("la nota es buena");
+            if (español >= 70 && español < 89)
+                Console.WriteLine("la nota es notale");
+            if (español>= 90 && español < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de español del primer estudiante es {0}", español);
+
+            Console.WriteLine("digite nota de fisica de 1 a 100  del primer estudiante ");
+            fisica = int.Parse(System.Console.ReadLine());
+            if (fisica < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (fisica >= 50 && fisica < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (fisica >= 60 && fisica < 79)
+                Console.WriteLine("la nota es buena");
+            if (fisica >= 70 && fisica < 89)
+                Console.WriteLine("la nota es notale");
+            if (fisica >= 90 && fisica < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de fisica del primer estudiante es {0}", fisica);
+
+
+
+            Console.WriteLine("digite nota de matematicas de 1 a 100  del segundo estudiante ");
+            matematicas = int.Parse(System.Console.ReadLine());
+            if (matematicas < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (matematicas >= 50 && matematicas < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (matematicas >= 60 && matematicas < 79)
+                Console.WriteLine("la nota es buena");
+            if (matematicas >= 70 && matematicas < 89)
+                Console.WriteLine("la nota es notale");
+            if (matematicas >= 90 && matematicas < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de matematicas del segundo estudiante es {0}", matematicas);
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del segundo estudiante ");
+            ingles = int.Parse(System.Console.ReadLine());
+            if (ingles < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (ingles >= 50 && ingles < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (ingles >= 60 && ingles < 79)
+                Console.WriteLine("la nota es buena");
+            if (ingles >= 70 && ingles < 89)
+                Console.WriteLine("la nota es notale");
+            if (ingles >= 90 && ingles < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de ingles del segundo estudiante es {0}", ingles);
+
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del segundo estudiante ");
+            español = int.Parse(System.Console.ReadLine());
+            if (español < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (español >= 50 && español < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (español >= 60 && español < 79)
+                Console.WriteLine("la nota es buena");
+            if (español >= 70 && español < 89)
+                Console.WriteLine("la nota es notale");
+            if (español >= 90 && español < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de español del segundo estudiante es {0}", español);
+
+            Console.WriteLine("digite nota de fisica de 1 a 100  del segundo  estudiante ");
+            fisica = int.Parse(System.Console.ReadLine());
+            if (fisica < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (fisica >= 50 && fisica < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (fisica >= 60 && fisica < 79)
+                Console.WriteLine("la nota es buena");
+            if (fisica >= 70 && fisica < 89)
+                Console.WriteLine("la nota es notale");
+            if (fisica >= 90 && fisica < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de fisica del segundo  estudiante es {0}", fisica);
+
+
+            Console.WriteLine("digite nota de matematicas de 1 a 100  del tercer estudiante ");
+            matematicas = int.Parse(System.Console.ReadLine());
+            if (matematicas < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (matematicas >= 50 && matematicas < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (matematicas >= 60 && matematicas < 79)
+                Console.WriteLine("la nota es buena");
+            if (matematicas >= 70 && matematicas < 89)
+                Console.WriteLine("la nota es notale");
+            if (matematicas >= 90 && matematicas < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de matematicas del tercer estudiante es {0}", matematicas);
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del tercer estudiante ");
+            ingles = int.Parse(System.Console.ReadLine());
+            if (ingles < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (ingles >= 50 && ingles < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (ingles >= 60 && ingles < 79)
+                Console.WriteLine("la nota es buena");
+            if (ingles >= 70 && ingles < 89)
+                Console.WriteLine("la nota es notale");
+            if (ingles >= 90 && ingles < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de ingles del tercer estudiante es {0}", ingles);
+
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del tercer estudiante ");
+            español = int.Parse(System.Console.ReadLine());
+            if (español < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (español >= 50 && español < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (español >= 60 && español < 79)
+                Console.WriteLine("la nota es buena");
+            if (español >= 70 && español < 89)
+                Console.WriteLine("la nota es notale");
+            if (español >= 90 && español < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de español del tercer estudiante es {0}", español);
+
+            Console.WriteLine("digite nota de fisica de 1 a 100  del tercer estudiante ");
+            fisica = int.Parse(System.Console.ReadLine());
+            if (fisica < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (fisica >= 50 && fisica < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (fisica >= 60 && fisica < 79)
+                Console.WriteLine("la nota es buena");
+            if (fisica >= 70 && fisica < 89)
+                Console.WriteLine("la nota es notale");
+            if (fisica >= 90 && fisica < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de fisica del tercer estudiante es {0}", fisica);
+
+
+            Console.WriteLine("digite nota de matematicas de 1 a 100  del cuarto estudiante ");
+            matematicas = int.Parse(System.Console.ReadLine());
+            if (matematicas < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (matematicas >= 50 && matematicas < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (matematicas >= 60 && matematicas < 79)
+                Console.WriteLine("la nota es buena");
+            if (matematicas >= 70 && matematicas < 89)
+                Console.WriteLine("la nota es notale");
+            if (matematicas >= 90 && matematicas < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de matematicas del cuarto estudiante es {0}", matematicas);
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del cuarto estudiante ");
+            ingles = int.Parse(System.Console.ReadLine());
+            if (ingles < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (ingles >= 50 && ingles < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (ingles >= 60 && ingles < 79)
+                Console.WriteLine("la nota es buena");
+            if (ingles >= 70 && ingles < 89)
+                Console.WriteLine("la nota es notale");
+            if (ingles >= 90 && ingles < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de ingles del cuarto estudiante es {0}", ingles);
+
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del cuarto estudiante ");
+            español = int.Parse(System.Console.ReadLine());
+            if (español < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (español >= 50 && español < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (español >= 60 && español < 79)
+                Console.WriteLine("la nota es buena");
+            if (español >= 70 && español < 89)
+                Console.WriteLine("la nota es notale");
+            if (español >= 90 && español < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de español del cuarto estudiante es {0}", español);
+
+            Console.WriteLine("digite nota de fisica de 1 a 100  del cuarto estudiante ");
+            fisica = int.Parse(System.Console.ReadLine());
+            if (fisica < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (fisica >= 50 && fisica < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (fisica >= 60 && fisica < 79)
+                Console.WriteLine("la nota es buena");
+            if (fisica >= 70 && fisica < 89)
+                Console.WriteLine("la nota es notale");
+            if (fisica >= 90 && fisica < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de fisica del cuarto estudiante es {0}", fisica);
+
+
+
+            Console.WriteLine("digite nota de matematicas de 1 a 100  del quinto estudiante ");
+            matematicas = int.Parse(System.Console.ReadLine());
+            if (matematicas < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (matematicas >= 50 && matematicas < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (matematicas >= 60 && matematicas < 79)
+                Console.WriteLine("la nota es buena");
+            if (matematicas >= 70 && matematicas < 89)
+                Console.WriteLine("la nota es notale");
+            if (matematicas >= 90 && matematicas < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de matematicas del quinto estudiante es {0}", matematicas);
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del quinto estudiante ");
+            ingles = int.Parse(System.Console.ReadLine());
+            if (ingles < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (ingles >= 50 && ingles < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (ingles >= 60 && ingles < 79)
+                Console.WriteLine("la nota es buena");
+            if (ingles >= 70 && ingles < 89)
+                Console.WriteLine("la nota es notale");
+            if (ingles >= 90 && ingles < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de ingles del quinto estudiante es {0}", ingles);
+
+
+            Console.WriteLine("digite nota de ingles de 1 a 100  del quinto estudiante ");
+            español = int.Parse(System.Console.ReadLine());
+            if (español < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (español >= 50 && español < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (español >= 60 && español < 79)
+                Console.WriteLine("la nota es buena");
+            if (español >= 70 && español < 89)
+                Console.WriteLine("la nota es notale");
+            if (español >= 90 && español < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de español del quinto estudiante es {0}", español);
+
+            Console.WriteLine("digite nota de fisica de 1 a 100  del quinto estudiante ");
+            fisica = int.Parse(System.Console.ReadLine());
+            if (fisica < 50)
+                Console.WriteLine("la nota es insuficiente");
+            if (fisica >= 50 && fisica < 69)
+                Console.WriteLine("la nota es suficiente ");
+            if (fisica >= 60 && fisica < 79)
+                Console.WriteLine("la nota es buena");
+            if (fisica >= 70 && fisica < 89)
+                Console.WriteLine("la nota es notale");
+            if (fisica >= 90 && fisica < 100)
+                Console.WriteLine("la nota es sobresaliente ");
+
+            Console.WriteLine("la nota de fisica del quinto estudiante es {0}", fisica);
+
+        }
+    }        
+}
