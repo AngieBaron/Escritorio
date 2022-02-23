@@ -1,0 +1,59 @@
+using System;
+using System.Text;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic; 
+
+namespace Problema_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Num1 =0, Num2 =0, Resultado =0;
+            int Opcion =0;
+
+            Console.WriteLine("Digite dos nùmeros.");
+            Num1 = int.Parse(System.Console.ReadLine());
+            Num2 = int.Parse(System.Console.ReadLine());
+
+            if (Num1>=100 && Num2>=100)
+            {
+                Console.WriteLine("1 - Suma.");
+                Console.WriteLine("2 - Resta.");
+                Console.WriteLine("3 - Divisiòn.");
+                Console.WriteLine("4 - Multiplicaciòn.");
+                Console.WriteLine("Digite operaciòn deseada."); 
+                Opcion= int.Parse(System.Console.ReadLine());
+
+                switch (Opcion)
+                {
+                    case 1:
+                        Resultado = Num1 + Num2; 
+                        break;
+                    case 2:
+                        Resultado = Num1 - Num2;
+                        break;
+                    case 3:
+                        Resultado = Num1 / Num2;
+                        break;
+                    case 4:
+                        Resultado = Num1 * Num2;
+                        break;
+                    default:
+                        Console.WriteLine("Operación no valida.");
+                        break;
+                }
+                Console.WriteLine("El resultado es: {0}", Resultado);
+            }
+            else if (Num1==0 || Num2==0)
+            {
+                Console.WriteLine("Digitaste cero, opción no valida.");
+            }
+            else
+            {
+                Console.WriteLine("Digitaste un número real, Opción no valida.");
+            }
+        }
+    }
+}
