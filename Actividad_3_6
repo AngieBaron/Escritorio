@@ -3,69 +3,29 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Ejercicio7
+namespace Ejercicio_4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double n1 = 0, n2 = 0, par = 0, impar = 0, j = 0, i = 0;
-            char opcion;
+            double i = 100, num = 0;
 
 
-            Console.WriteLine("i:numero impar");
-            Console.WriteLine("p:numero par");
-            opcion = Console.ReadKey().KeyChar;
+            while (num > 1) { }
 
-            Console.WriteLine("\n digite 2 numero");
-            n1 = double.Parse(Console.ReadLine());
-            n2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("digite un numero par en el rango de 100 a 200");
+                num = int.Parse(System.Console.ReadLine());
+                if (num < 100 && num > 200 && num % 2 == 0){ }
+                
 
-            switch (opcion)
-            {
-                case 'p': 
-                    
-            if ((n1 % 2) == 0)
-            {
-                Console.WriteLine("Esta es la lista de numeros pares entre {0} y {1}", n1, n2);
-                for (i = n1; i <= n2; i = i + 2)
-                {
-                    Console.WriteLine("{0}", i);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Esta es la lista de numeros pares entre {0} y {1}", n1, n2);
 
-                for (i = n1+1; i <= n2; i = i + 2)
-                {
-                    Console.WriteLine("{0}", i);
-                }
+            for (i = num; i <= 200; i += 2)
+                
 
-            }
-                    break; 
-
-                    case 'i':
-            if ((n1 % 2) == 0)
-                    {
-                    Console.WriteLine("Esta es la lista de numeros impares entre {0} y {1}", n1, n2);
-                    for (i = n1+1; i <= n2; i = i + 2)
-                    {
-                        Console.WriteLine("{0}", i);
-                    }
-                    }
-            else
-                    {
-                    Console.WriteLine("Esta es la lista de numeros impares entre {0} y {1}", n1, n2);
-
-                    for (i = n1; i <= n2; i = i + 2)
-                    {
-                        Console.WriteLine("{0}", i);
-                    }
-
-                    }
-                    break;
+                    Console.WriteLine("los numeros son{0}", i);
+                
             }
         }
+       
     }
-}
