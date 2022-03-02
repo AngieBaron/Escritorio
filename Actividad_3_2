@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Ejercicio4
+{
+    class problema2
+    {
+        static void Main(string[] args)
+        {
+            int i = 0;
+            int j = 0; 
+            int T = 5;
+            int n = 0;
+            
+
+
+            while (i < T)
+            {
+
+                Console.WriteLine("\n Digite 1 numero");
+
+                n = int.Parse(Console.ReadLine());
+                for (j =0; j < n; j++)
+                {
+                    Console.Write("*");
+
+                }
+                    i++;
+                
+            }
+        }
+    }
+}
