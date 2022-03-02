@@ -1,0 +1,26 @@
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Ejercicio_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double suma = 1, num, resultado = 0,j=0,contador;
+
+            Console.WriteLine("Diigite el numero para realizar la suma");
+            num = double.Parse(System.Console.ReadLine());
+
+
+            for (int m =1 ; m <= num; m++)
+            resultado=resultado+(1.0/m);
+            {
+                Console.WriteLine("La suma es{0} ", resultado); 
+            }
+        }
+       
+     }   
+}
